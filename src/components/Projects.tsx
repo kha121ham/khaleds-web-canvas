@@ -84,7 +84,7 @@ const Projects = () => {
               {/* Project Links */}
               <div className="flex gap-4">
                 <a
-                  href={project.github}
+                  href={project.github} target='_blank'
                   className="flex items-center gap-2 text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors"
                 >
                   <Github size={18} />
