@@ -7,6 +7,7 @@ import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import { useTheme } from '@/hooks/useTheme';
+import FadeInSection from '@/components/FadeInSection';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,19 +46,33 @@ const Index = () => {
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme} toggleTheme={toggleTheme} />
       
       <main className="relative z-10">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+  <FadeInSection>
+    <Hero />
+  </FadeInSection>
+
+  <FadeInSection>
+    <About />
+  </FadeInSection>
+
+  <FadeInSection>
+    <Skills />
+  </FadeInSection>
+
+  <FadeInSection>
+    <Projects />
+  </FadeInSection>
+
+  <FadeInSection>
+    <Contact />
+  </FadeInSection>
+</main>
 
       {/* Footer */}
       <footer className="relative z-10 py-8 px-6 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-slate-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Khaled Hamada. All rights reserved. Made with ❤️ and React
+              © 2025 Khaled Hamada. All rights reserved.
             </div>
             <div className="text-slate-500 dark:text-gray-400 text-sm">
               Designed & Developed by Khaled
