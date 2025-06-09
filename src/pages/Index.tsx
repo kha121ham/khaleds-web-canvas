@@ -7,7 +7,7 @@ import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import { useTheme } from '@/hooks/useTheme';
-import FadeInSection from '@/components/FadeInSection';
+
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,26 +45,12 @@ const Index = () => {
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} theme={theme} toggleTheme={toggleTheme} />
       
-      <main className="relative z-10">
-  <FadeInSection>
+<main className="relative z-10">
     <Hero />
-  </FadeInSection>
-
-  <FadeInSection>
     <About />
-  </FadeInSection>
-
-  <FadeInSection>
     <Skills />
-  </FadeInSection>
-
-  <FadeInSection>
     <Projects />
-  </FadeInSection>
-
-  <FadeInSection>
     <Contact />
-  </FadeInSection>
 </main>
 
       {/* Footer */}
