@@ -14,9 +14,6 @@ const Hero = () => {
 
       <div className="relative z-10 animate-fade-in">
         {/* Profile Image */}
-        <div className="w-32 h-32 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full mx-auto mb-8 flex items-center justify-center shadow-2xl">
-          <span className="text-4xl font-bold text-white">K</span>
-        </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white mb-4">
           Hi, I'm{' '}
