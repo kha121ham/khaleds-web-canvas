@@ -41,14 +41,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "khaled@example.com",
-      link: "mailto:khaled@example.com"
+      value: "khaledhamada779@gmail.com",
+      link: "khaledhamada779@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+20 123 456 789",
-      link: "tel:+20123456789"
+      value: "+20 106 204 2449",
+      link: "tel:+201062042449"
     },
     {
       icon: MapPin,
@@ -59,9 +59,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Github, href: "https://github.com/kha121ham", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/khaled-hamada-6a3442273/", label: "LinkedIn" },
   ];
 
   return (

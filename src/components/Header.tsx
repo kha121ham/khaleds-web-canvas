@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
@@ -24,14 +23,10 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, toggleTheme }: HeaderProps) 
     <header className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="text-2xl font-bold">
-            <span className="text-slate-900 dark:text-white">Khaled</span>
-            <span className="text-indigo-500 dark:text-indigo-400">.dev</span>
-          </div>
+          {/* حذف اللوجو */}
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 items-center">
+          {/* Desktop Navigation - اجعلها في المنتصف */}
+          <nav className="hidden md:flex space-x-8 items-center mx-auto">
             {menuItems.map((item) => (
               <a
                 key={item.href}

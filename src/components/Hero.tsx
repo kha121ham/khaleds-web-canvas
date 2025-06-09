@@ -53,21 +53,16 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-12">
-          <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 hover:scale-110 transform">
+          <a href="https://github.com/kha121ham" target='blank' className="text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 hover:scale-110 transform">
             <Github size={24} />
           </a>
-          <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 hover:scale-110 transform">
+          <a href="https://www.linkedin.com/in/khaled-hamada-6a3442273/" target='blank' className="text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 hover:scale-110 transform">
             <Linkedin size={24} />
-          </a>
-          <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 hover:scale-110 transform">
-            <Mail size={24} />
           </a>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="text-slate-500 dark:text-gray-400" size={32} />
-        </div>
+
       </div>
     </section>
   );

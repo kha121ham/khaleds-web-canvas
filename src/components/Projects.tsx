@@ -7,8 +7,8 @@ const Projects = () => {
     {
       title: "DevConnector",
       description: "A comprehensive social platform for developers to connect, share knowledge, and collaborate on projects. Features include user profiles, posts, comments, and real-time notifications.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-      github: "#",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      github: "https://github.com/kha121ham/Dev-Connector",
       live: "#",
       featured: true
     },
@@ -16,42 +16,18 @@ const Projects = () => {
       title: "eCommerce Website",
       description: "Full-featured online store with shopping cart, payment integration, admin panel, and inventory management. Built with modern e-commerce best practices.",
       technologies: ["React", "Node.js", "Stripe", "MongoDB", "JWT"],
-      github: "#",
+      github: "https://github.com/kha121ham/E-Commerce",
       live: "#",
       featured: true
     },
     {
       title: "eLearning Platform",
       description: "Complete learning management system with course creation, video streaming, progress tracking, quizzes, and student-instructor interaction.",
-      technologies: ["React", "Express", "MongoDB", "Video.js", "Chart.js"],
-      github: "#",
+      technologies: ["React", "Express", "MongoDB", "Video.js"],
+      github: "https://github.com/kha121ham/ElearningPlatForm",
       live: "#",
       featured: false
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management tool with drag-and-drop functionality, team workspaces, and real-time updates.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "#",
-      live: "#",
-      featured: false
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
-      github: "#",
-      live: "#",
-      featured: false
-    },
-    {
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio website with smooth animations, contact forms, and admin panel for content management.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-      github: "#",
-      live: "#",
-      featured: false
-    }
   ];
 
   return (
@@ -126,15 +102,6 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-8 py-3 border-2 border-indigo-500 dark:border-indigo-400 text-indigo-500 dark:text-indigo-400 rounded-full hover:bg-indigo-500 dark:hover:bg-indigo-400 hover:text-white transition-all duration-300 font-semibold"
-          >
-            <Github size={20} />
-            View All Projects on GitHub
-          </a>
-        </div>
       </div>
     </section>
   );

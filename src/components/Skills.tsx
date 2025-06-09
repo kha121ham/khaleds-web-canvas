@@ -8,7 +8,6 @@ const Skills = () => {
       skills: [
         { name: "React" },
         { name: "JavaScript" },
-        { name: "TypeScript" },
         { name: "HTML/CSS" },
         { name: "Tailwind CSS" }
       ]
@@ -19,7 +18,6 @@ const Skills = () => {
         { name: "Node.js" },
         { name: "Express.js" },
         { name: "MongoDB" },
-        { name: "MySQL" },
         { name: "REST APIs" }
       ]
     },
@@ -28,9 +26,7 @@ const Skills = () => {
       skills: [
         { name: "Git & GitHub" },
         { name: "VS Code" },
-        { name: "Figma" },
         { name: "Postman" },
-        { name: "Docker" }
       ]
     }
   ];
