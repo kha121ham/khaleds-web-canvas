@@ -17,6 +17,8 @@ const Index = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const dotPattern = "data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans scroll-smooth relative overflow-x-hidden">
       {/* Background Elements */}
@@ -29,9 +31,12 @@ const Index = () => {
       {/* Parallax effect */}
       <div 
         className="fixed inset-0 opacity-5 pointer-events-none"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        style={{ 
+          transform: `translateY(${scrollY * 0.5}px)`,
+          backgroundImage: `url("${dotPattern}")`,
+          backgroundRepeat: 'repeat'
+        }}
       >
-        <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="7" cy="7" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] repeat"></div>
       </div>
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
