@@ -21,14 +21,14 @@ const Hero = () => {
             Khaled
           </span>
         </h1>
-        
+
         <div className="text-xl md:text-2xl text-slate-600 dark:text-gray-300 mb-6">
-          <span className="text-indigo-500 dark:text-indigo-400 font-semibold">MERN Stack Developer</span> & 
+          <span className="text-indigo-500 dark:text-indigo-400 font-semibold">MERN Stack Developer</span> &
           <span className="text-purple-500 dark:text-purple-400 font-semibold"> Problem Solver</span>
         </div>
-        
+
         <p className="max-w-2xl text-slate-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
-          I craft beautiful, responsive web applications with modern technologies. 
+          I build fast, reliable, and modern web applications from front to back.
           Passionate about clean code, user experience, and turning ideas into reality.
         </p>
 

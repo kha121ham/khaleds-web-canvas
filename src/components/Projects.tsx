@@ -7,26 +7,29 @@ const Projects = () => {
     {
       title: "DevConnector",
       description: "A comprehensive social platform for developers to connect, share knowledge, and collaborate on projects. Features include user profiles, posts, comments, and real-time notifications.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      technologies: ["React", "BootStrap", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/kha121ham/Dev-Connector",
-      live: "#",
-      featured: true
+      live: "https://dev-connector-4apz.onrender.com/", 
+      featured: false,
+      image: "/Screenshot 2025-07-05 164959.png"
     },
     {
       title: "eCommerce Website",
       description: "Full-featured online store with shopping cart, payment integration, admin panel, and inventory management. Built with modern e-commerce best practices.",
-      technologies: ["React", "Node.js", "Stripe", "MongoDB", "JWT"],
+      technologies: ["React", "BootStrap", "Node.js", "Express", "MongoDB", "Stripe"],
       github: "https://github.com/kha121ham/E-Commerce",
-      live: "#",
-      featured: true
+      live: "https://proshop-sc3x.onrender.com/",
+      featured: true,
+      image: "/Screenshot 2025-07-05 150628.png"
     },
     {
       title: "eLearning Platform",
       description: "Complete learning management system with course creation, video streaming, progress tracking, quizzes, and student-instructor interaction.",
-      technologies: ["React", "Express", "MongoDB", "Video.js"],
+      technologies: ["React", "Tailwind CSS", "node.js", "Express", "MongoDB", "Stripe"],
       github: "https://github.com/kha121ham/ElearningPlatForm",
-      live: "#",
-      featured: false
+      live: "https://elearningplatform-ym9x.onrender.com/",
+      featured: true,
+      image: "/Screenshot 2025-07-05 145941.png"
     },
   ];
 
@@ -55,16 +58,31 @@ const Projects = () => {
                   Featured
                 </div>
               )}
-              
-              {/* Project Image Placeholder */}
-              <div className="w-full h-48 bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-500/20 dark:to-purple-600/20 rounded-lg mb-6 flex items-center justify-center">
-                <div className="text-4xl text-indigo-500 dark:text-indigo-400 opacity-50">💻</div>
+
+              {/* Project Image */}
+              <div className="w-full h-48 bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-500/20 dark:to-purple-600/20 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={`${project.title}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) {
+                      fallback.style.display = 'flex';
+                    }
+                  }}
+                />
+                <div className="text-4xl text-indigo-500 dark:text-indigo-400 opacity-50 hidden">
+                  💻
+                </div>
               </div>
 
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors">
                 {project.title}
               </h3>
-              
+
               <p className="text-slate-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
                 {project.description}
               </p>
@@ -92,6 +110,7 @@ const Projects = () => {
                 </a>
                 <a
                   href={project.live}
+                  target='_blank'
                   className="flex items-center gap-2 text-slate-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors"
                 >
                   <ExternalLink size={18} />

@@ -40,19 +40,18 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-slate-600 dark:text-gray-300 text-lg leading-relaxed">
-              I'm a passionate computer engineering student with a deep love for creating 
-              digital experiences that make a difference. My journey in web development 
-              started with curiosity and has evolved into a commitment to excellence.
+              I’m a Computer Engineering student with a strong passion for web development.
+              Over the past few years, I’ve built several full-stack projects using the MERN Stack (MongoDB, Express, React, Node.js) combining clean UI with powerful backend logic.
+
+              I enjoy solving real-world problems through code, and I’m constantly exploring new technologies to improve my skills and deliver better solutions.
             </p>
             <p className="text-slate-600 dark:text-gray-300 text-lg leading-relaxed">
-              With expertise in the MERN stack, I focus on building scalable, 
-              user-friendly applications that solve real-world problems. I believe 
-              in the power of clean code and thoughtful design.
+            Currently, I’m focused on building high-quality, scalable applications and always looking for new challenges to grow as a developer.
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 mt-8">
-          
+
 
             </div>
           </div>
