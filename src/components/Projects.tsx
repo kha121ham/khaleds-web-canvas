@@ -6,16 +6,18 @@ const Projects = () => {
   const projects = [
     {
       title: "DevConnector",
-      description: "A comprehensive social platform for developers to connect, share knowledge, and collaborate on projects. Features include user profiles, posts, comments, and real-time notifications.",
+      description: `A full-stack MERN social platform for developers to connect, share, and showcase their profiles.
+                    Users can create accounts, set up personal developer profiles, and make posts to engage with others in the community.
+                    It includes full authentication, profile management, and post interactions like creating, liking, and commenting.`,
       technologies: ["React", "BootStrap", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/kha121ham/Dev-Connector",
-      live: "https://dev-connector-4apz.onrender.com/", 
+      live: "https://dev-connector-4apz.onrender.com/",
       featured: false,
       image: "/Screenshot 2025-07-05 164959.png"
     },
     {
       title: "eCommerce Website",
-      description: "Full-featured online store with shopping cart, payment integration, admin panel, and inventory management. Built with modern e-commerce best practices.",
+      description: "A full-stack MERN e-commerce application that allows users to browse products, add them to cart, and place orders. The platform includes user authentication, product filtering, and a dynamic shopping cart system. Admins can manage products through a secure dashboard, while customers enjoy a clean and responsive UI.",
       technologies: ["React", "BootStrap", "Node.js", "Express", "MongoDB", "Stripe"],
       github: "https://github.com/kha121ham/E-Commerce",
       live: "https://proshop-sc3x.onrender.com/",
@@ -24,7 +26,9 @@ const Projects = () => {
     },
     {
       title: "eLearning Platform",
-      description: "Complete learning management system with course creation, video streaming, progress tracking, quizzes, and student-instructor interaction.",
+      description: `A full-stack web application built with the MERN stack (MongoDB, Express, React, Node.js) that allows users to browse and purchase online courses.
+The platform includes user authentication using JWT, protected routes, and role-based access for admins and students.
+Users can only access course content after payment, ensuring a secure and personalized learning experience.`,
       technologies: ["React", "Tailwind CSS", "node.js", "Express", "MongoDB", "Stripe"],
       github: "https://github.com/kha121ham/ElearningPlatForm",
       live: "https://elearningplatform-ym9x.onrender.com/",
