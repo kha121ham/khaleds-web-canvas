@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center px-2 sm:px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
           Get In <span className="text-indigo-500 dark:text-indigo-400">Touch</span>
         </h2>
@@ -35,7 +35,7 @@ const Contact = () => {
 
         {/* Email + Phone */}
         <div className="flex flex-col items-center gap-6 mb-12">
-          <div className="grid md:grid-cols-2 gap-8 w-full max-w-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full max-w-2xl">
             {contactInfo.map((info, index) => (
               <a
                 key={index}
@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
 
           {/* Location in center */}
-          <div className="flex justify-center w-full max-w-md">
+          <div className="flex justify-center w-full max-w-md mt-4 md:mt-0">
             <div className="flex items-center gap-4 p-4 bg-white dark:bg-slate-700/50 rounded-xl shadow-sm dark:shadow-none justify-center">
               <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <MapPin className="text-white" size={20} />
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
           {socialLinks.map((social, index) => (
             <a
               key={index}
@@ -76,7 +76,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="w-12 h-12 bg-white dark:bg-slate-700/50 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 transition-all duration-300 hover:scale-110 shadow-sm dark:shadow-none group"
+              className="w-12 h-12 bg-white dark:bg-slate-700/50 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 transition-all duration-300 hover:scale-110 shadow-sm dark:shadow-none group mb-2"
             >
               <social.icon className="text-slate-600 dark:text-gray-400 group-hover:text-white" size={20} />
             </a>
