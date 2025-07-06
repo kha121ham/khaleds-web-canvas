@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import { Theme } from '@/hooks/useTheme';
 
@@ -37,12 +37,35 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, toggleTheme }: HeaderProps) 
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
+            {/* CV Button */}
+            <a
+              href="/puplic/Khaled-Hamada-CV.pdf"
+              download
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-slate-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group text-sm ml-2"
+              style={{ minWidth: '2.5rem' }}
+            >
+              <Download size={16} className="inline-block" />
+              <span>CV</span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           </nav>
 
           {/* Mobile Menu Button and Theme Toggle */}
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+            <a
+              href="/Khaled-Hamada-CV.pdf"
+              download
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-slate-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group text-sm"
+              style={{ minWidth: '2rem' }}
+            >
+              <Download size={15} className="inline-block" />
+              <span>CV</span>
+              <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-indigo-500 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-600 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white transition-colors"
