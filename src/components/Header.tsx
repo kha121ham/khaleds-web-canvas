@@ -39,7 +39,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, toggleTheme }: HeaderProps) 
             ))}
             {/* CV Button */}
             <a
-              href="/puplic/Khaled-Hamada-CV.pdf"
+              href="/Khaled-Hamada-CV.pdf"
               download
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-slate-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group text-sm ml-2"
