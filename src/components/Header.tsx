@@ -39,7 +39,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, toggleTheme }: HeaderProps) 
             ))}
             {/* CV Button */}
             <a
-              href="/Khaled-Hamada-CV.pdf"
+              href="/Khaled-Hamada-Ebrahim-FlowCV-Resume-20250611 (1).pdf"
               download
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-slate-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group text-sm ml-2"
